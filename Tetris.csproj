@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\tetris2.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\backgroundTetris.jpg" />
+    <None Remove="Assets\bezbojna-01.png" />
+    <None Remove="Assets\Block-Empty.png" />
+    <None Remove="Assets\Block-III.png" />
+    <None Remove="Assets\Block-JJJ.png" />
+    <None Remove="Assets\Block-LLL.png" />
+    <None Remove="Assets\Block-OOO.png" />
+    <None Remove="Assets\Block-SSS.png" />
+    <None Remove="Assets\Block-TTT.png" />
+    <None Remove="Assets\Block-ZZZ.png" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\III.png" />
+    <None Remove="Assets\JJJ.png" />
+    <None Remove="Assets\LLL.png" />
+    <None Remove="Assets\OOO.png" />
+    <None Remove="Assets\SSS.png" />
+    <None Remove="Assets\tetris2.ico" />
+    <None Remove="Assets\TTT.png" />
+    <None Remove="Assets\ZZZ.png" />
+    <None Remove="RubikBrokenFax-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\tetris2.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\bezbojna-01.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\backgroundTetris.jpg" />
+    <Resource Include="Assets\Block-Empty.png" />
+    <Resource Include="Assets\Block-III.png" />
+    <Resource Include="Assets\Block-JJJ.png" />
+    <Resource Include="Assets\Block-LLL.png" />
+    <Resource Include="Assets\Block-OOO.png" />
+    <Resource Include="Assets\Block-SSS.png" />
+    <Resource Include="Assets\Block-TTT.png" />
+    <Resource Include="Assets\Block-ZZZ.png" />
+    <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\III.png" />
+    <Resource Include="Assets\JJJ.png" />
+    <Resource Include="Assets\LLL.png" />
+    <Resource Include="Assets\OOO.png" />
+    <Resource Include="Assets\SSS.png" />
+    <Resource Include="Assets\tetris2.ico" />
+    <Resource Include="Assets\TTT.png" />
+    <Resource Include="Assets\ZZZ.png" />
+    <Resource Include="RubikBrokenFax-Regular.ttf" />
+  </ItemGroup>
+
+</Project>
