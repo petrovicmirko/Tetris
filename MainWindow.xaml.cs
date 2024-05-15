@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Reflection;
+using System.IO;
 
 namespace Tetris
 {
@@ -133,9 +135,16 @@ namespace Tetris
             ScoreText.Text = $"Score: {gameState.Score}";
         }
 
+        private string GetHighScoreFilePath()
+        {
+            string fileName = "High score.txt";
+            string relativePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+            return relativePath;
+        }
+
         private void WriteHighScoreToFile(int highScore)
         {
-            string filePath = "C:/Users/AMG_Computers/source/repos/Tetris/Tetris/High score.txt";
+            string filePath = GetHighScoreFilePath();
 
             using (StreamWriter sw = new StreamWriter(filePath))
             {
@@ -157,7 +166,8 @@ namespace Tetris
 
         public void ReadHighScoreFromFile()
         {
-            string filePath = "C:/Users/AMG_Computers/source/repos/Tetris/Tetris/High score.txt";
+            //"C:/Users/AMG_Computers/source/repos/Tetris/Tetris/High score.txt"
+            string filePath = GetHighScoreFilePath();
             
             using (StreamReader sr = new StreamReader(filePath))
             {
